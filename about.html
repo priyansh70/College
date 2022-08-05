@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Website</title>
+
+    <!-- Link StyleSheet -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+
+    <!-- Attach Google Font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Icon  -->
+    <script src="https://kit.fontawesome.com/5b12999530.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- Header Section -->
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="img/logo.png" alt="logo" class="logo"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html" target="_blank">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="course.html" target="_blank">COURSE</a></li>
+                    <li><a href="blog.html" target="_blank">BLOG</a></li>
+                    <li><a href="contact.html" target="_blank">CONTACT US</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+
+        <h1>About us</h1>
+    </section>
+
+    <!-- About us Content  -->
+    <section class="about-us">
+        <div class="row">
+            <div class="about-col">
+                <h1>We are the World's Largest University</h1> 
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum doloremque, saepe obcaecati iure
+                    harum
+                    odit voluptate dignissimos commodi inventore soluta deleniti cumque sequi minima maiores cupiditate
+                    hic
+                    iusto fugit. Deserunt?</p>
+                <a href="#" class="btn red-btn">Explore Now</a>
+            </div>
+            <div class="about-col">
+                <img src="img/about.jpg" alt="#">
+            </div>
+        </div>
+    </section>
+    <!-- Footer Section Start From Here  -->
+    <section class="footer">
+        <h4>About us</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, alias magni quam et totam<br>temporibus
+            porro! Ipsum modi odio culpa aut aliquam quibusdam quam atque.</p>
+        <div class="links">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-linkedin"></i>
+            <i class="fa fa-instagram"></i>
+        </div>
+        <p>Copyright <i class="fa fa-copyright"></i> Priyansh Patel</p>
+    </section>
+
+    <!-- JAVA SCRIPT FOR TOGGLE MENU -->
+    <script>
+        let navLinks = document.getElementById("navLinks");
+
+        function showMenu() {
+            navLinks.style.right = '0px';
+        }
+
+        function hideMenu() {
+            navLinks.style.right = '-200px';
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Website</title>
+
+    <!-- Link StyleSheet -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+
+    <!-- Attach Google Font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Icon  -->
+    <script src="https://kit.fontawesome.com/5b12999530.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- Header Section -->
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="img/logo.png" alt="logo" class="logo"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html" target="_blank">HOME</a></li>
+                    <li><a href="about.html" target="_blank">ABOUT</a></li>
+                    <li><a href="course.html" target="_blank">COURSE</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html" target="_blank">CONTACT US</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+
+        <h1>Our Certificate and Online Programs For 2022</h1>
+    </section>
+
+    <!-- BLOG SECTION  -->
+    <section class="blog">
+        <div class="row">
+            <div class="blog-left">
+                <img src="img/certificate.jpg" alt="#">
+                <h2>Our Certificate & Online Programs For 2022</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium, reiciendis recusandae a,
+                    aliquid voluptates hic ea quam animi suscipit alias nulla omnis ab aperiam iure vel rem, atque iusto
+                    quae temporibus! Veritatis sed neque tempora exercitationem quis blanditiis id explicabo accusamus
+                    enim aperiam, doloremque facere?</p>
+                <br>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint expedita eaque quos quidem natus
+                    error, incidunt iusto placeat sunt magni voluptates porro odio assumenda cumque animi numquam vitae
+                    inventore quam et quis nulla maxime rerum vero quisquam. Quisquam culpa dolor impedit, labore quas
+                    corporis rem.</p>
+                <br>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reiciendis ipsa dignissimos voluptates,
+                    ratione aperiam accusantium odio possimus fugiat neque esse accusamus voluptas? Quaerat temporibus,
+                    ea quidem quos laboriosam incidunt, nobis magni amet consequuntur quasi veritatis. Ut aperiam ipsum
+                    libero? Recusandae a deleniti expedita tempora doloremque aliquam animi id nisi quibusdam!</p>
+                <br>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus ad magnam praesentium voluptate
+                    omnis necessitatibus adipisci optio veniam. Nihil excepturi animi accusamus quam tenetur
+                    perspiciatis dolore quae neque. Minus doloremque laborum illum totam harum aliquid vero aspernatur
+                    doloribus! Cumque, a.</p>
+
+                <div class="comment-box">
+                    <h2>Leave Comment</h2>
+                    <div class="form">
+                        <input type="text" placeholder="Enter Name">
+                        <input type="email" placeholder="Enter Email">
+                        <textarea rows="5" placeholder="Your Comment"></textarea>
+                        <button type="submit" class="btn red-btn">POST COMMENT</button>
+                    </div>
+                </div>
+            </div>
+            <div class="blog-right">
+                <h3>Post Categories</h3>
+                <div>
+                    <span>Business Analytic</span>
+                    <span>21</span>
+                </div>
+                <div>
+                    <span>Machine Leaning</span>
+                    <span>12</span>
+                </div>
+                <div>
+                    <span>Data Science</span>
+                    <span>15</span>
+                </div>
+                <div>
+                    <span>Artificial Intelligence</span>
+                    <span>50</span>
+                </div>
+                <div>
+                    <span>Graphics Design</span>
+                    <span>30</span>
+                </div>
+                <div>
+                    <span>Data Analytic</span>
+                    <span>22</span>
+                </div>
+                <div>
+                    <span>Content Writing</span>
+                    <span>21</span>
+                </div>
+                <div>
+                    <span>Data Structures & Algorithm</span>
+                    <span>165</span>
+                </div>
+                <div>
+                    <span>New Technologies</span>
+                    <span>32</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer Section Start From Here  -->
+    <section class="footer">
+        <h4>About us</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, alias magni quam et totam<br>temporibus
+            porro! Ipsum modi odio culpa aut aliquam quibusdam quam atque.</p>
+        <div class="links">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-linkedin"></i>
+            <i class="fa fa-instagram"></i>
+        </div>
+        <p>Copyright <i class="fa fa-copyright"></i> Priyansh Patel</p>
+    </section>
+
+    <!-- JAVA SCRIPT FOR TOGGLE MENU -->
+    <script>
+        let navLinks = document.getElementById("navLinks");
+
+        function showMenu() {
+            navLinks.style.right = '0px';
+        }
+
+        function hideMenu() {
+            navLinks.style.right = '-200px';
+        }
+    </script>
+</body>
+
+</html>
